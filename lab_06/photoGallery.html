@@ -33,12 +33,48 @@
             padding-bottom: 50px;
         }
 
-        #gallery {
+        #box1 {
 			display: flex;
 			align-items: flex-start;
             flex-wrap: wrap;
 
             width: 1260px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            
+		}
+
+        #box2 {
+			display: flex;
+			align-items: flex-start;
+            flex-wrap: wrap;
+
+            width: 1260px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+
+		}
+
+        #box3 {
+			display: flex;
+			align-items: flex-start;
+            flex-wrap: wrap;
+
+            width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+
+		}
+
+        #box4 {
+			display: flex;
+			align-items: flex-start;
+            flex-wrap: wrap;
+
+            width: 800px;
             margin-left: auto;
             margin-right: auto;
             padding: 10px;
@@ -53,7 +89,13 @@
             margin: 0px;
         }
 
-        .large {}
+        .large {
+            width: 800px;
+            height: 695px;
+            padding: 10px;
+            margin: 0px;
+            padding-bottom: 20px;
+        }
 
         .img-container > p {
 			text-align: center;
@@ -61,7 +103,7 @@
 			visibility: hidden;
 		}
 
-        .thumbnail:hover + p {
+        .thumbnail:hover + p, .large:hover + p {
 			/* display: block; */
 			visibility: visible;
 		}
@@ -74,7 +116,7 @@
 	</div> <!-- #header -->
 
 
-    <div id="gallery">
+    <div id="box1">
         <div class = img-container>
             <img class="thumbnail" src="img/dog.jpg" alt="dog">
             <p>dog</p>
@@ -87,18 +129,28 @@
             <img class="thumbnail" src="img/giraffe.webp" alt="giraffe">
             <p>giraffe</p>
         </div>
-        <div class = img-container>
-            <img class="thumbnail" src="img/lion.jpg" alt="lion">
-            <p>lion</p>
+    </div>
+
+    <div id="box2">
+        <div id="box3">
+            <div class = img-container>
+                <img class="thumbnail" src="img/lion.jpg" alt="lion">
+                <p>lion</p>
+            </div>
+            <div class = img-container>
+                <img class="thumbnail" src="img/panda.jpg" alt="panda">
+                <p>panda</p>
+            </div>
         </div>
-        <div class = img-container>
-            <img class="thumbnail" src="img/panda.jpg" alt="panda">
-            <p>panda</p>
+        <div id="box4">
+            <div class = img-container>
+                <img class="large" src="img/peguin.jpg" alt="peguin">
+                <p>peguin</p>
+            </div>
         </div>
-        <div class = img-container>
-            <img class="thumbnail" src="img/peguin.jpg" alt="peguin">
-            <p>peguin</p>
-        </div>
+    </div>
+
+    <div id="box1">
         <div class = img-container>
             <img class="thumbnail" src="img/sheep.jpg" alt="sheep">
             <p>sheep</p>
@@ -111,11 +163,8 @@
             <img class="thumbnail" src="img/sea_turtle.jpg" alt="sea_turtle">
             <p>sea_turtle</p>
         </div>
-        <div class = img-container>
-            <img class="thumbnail" src="img/snake.jpg" alt="snake">
-            <p>snake</p>
-        </div>
-    </div> <!-- #gallery -->
+    </div>
+    
 
 
 	<div id="footer">
