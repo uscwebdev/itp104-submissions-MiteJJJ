@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhotoGallery</title>
+
+    <style>
+        #header {
+            background-image: url('img/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #FFF;
+            font-size: 2em;
+            text-align: center;
+            text-shadow: 0px 0px 10px #000;
+            height: 400px;
+            line-height: 400px;
+        }
+
+        #footer {
+            background-color: #777;
+            color: #FFF;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 0.8em;
+        }
+
+        #main {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            padding-bottom: 50px;
+        }
+
+        #gallery {
+			display: flex;
+			align-items: flex-start;
+            flex-wrap: wrap;
+
+            width: 1260px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            padding-bottom: 50px;
+
+		}
+
+        .thumbnail {
+            width: 400px;
+            height: 300px;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .large {}
+
+        .img-container > p {
+			text-align: center;
+			/* display: none; */
+			visibility: hidden;
+		}
+
+        .thumbnail:hover + p {
+			/* display: block; */
+			visibility: visible;
+		}
+    </style>
+</head>
+<body>
+
+	<div id="header">
+		<h1>Gallery</h1>
+	</div> <!-- #header -->
+
+
+    <div id="gallery">
+        <div class = img-container>
+            <img class="thumbnail" src="img/dog.jpg" alt="dog">
+            <p>dog</p>
+        </div>
+        <div class = img-container>
+            <img class="thumbnail" src="img/elephant.jpg" alt="elephant">
+            <p>elephant</p>
+        </div>
+        <div class = img-container>
+            <img class="thumbnail" src="img/giraffe.webp" alt="giraffe">
+            <p>giraffe</p>
+        </div>
+        <div class = img-container>
+            <img class="thumbnail" src="img/lion.jpg" alt="lion">
+            <p>lion</p>
+        </div>
+        <div class = img-container>
+            <img class="thumbnail" src="img/panda.jpg" alt="panda">
+            <p>panda</p>
+        </div>
+        <div class = img-container>
+            <img class="thumbnail" src="img/peguin.jpg" alt="peguin">
+            <p>peguin</p>
+        </div>
+        <div class = img-container>
+            <img class="thumbnail" src="img/sheep.jpg" alt="sheep">
+            <p>sheep</p>
+        </div>
+        <div class = img-container>
+            <img class="thumbnail" src="img/squirrel.jpg" alt="squirrel">
+            <p>squirrel</p>
+        </div>
+        <div class = img-container>
+            <img class="thumbnail" src="img/sea_turtle.jpg" alt="sea_turtle">
+            <p>sea_turtle</p>
+        </div>
+        <div class = img-container>
+            <img class="thumbnail" src="img/snake.jpg" alt="snake">
+            <p>snake</p>
+        </div>
+    </div> <!-- #gallery -->
+
+
+	<div id="footer">
+		University of Southern California &copy; 2018
+	</div> <!-- #footer -->
+
+</body>
+</html>
