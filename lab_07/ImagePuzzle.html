@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jie Chen | Image Puzzle</title>
+    <style>
+        h1 {
+            font-size: 4em;
+            margin: 0px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            line-height: 300px;
+            height: 300px;
+        }
+        
+        #allImages {
+            display: flex;
+            width: 600px;
+            margin-left: auto;
+			margin-right: auto;
+            flex-wrap: wrap;
+        }
+
+        #moveLeft {
+            position: relative;
+            left: -30px;
+            box-shadow: -6px 0px 5px #777;
+        }
+
+        #moveLeftDown {
+            position: relative;
+            top: 30px;
+            left: -30px;
+            box-shadow: -6px 6px 5px #777;
+        }
+
+        #moveUp {
+            position: relative;
+            top: -30px;
+            box-shadow: 0px -6px 5px #777;
+        }
+
+        #moveRight {
+            position: relative;
+            left: 30px;
+            box-shadow: 6px 0px 5px #777;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+        <h1>Dog Puzzle</h1>
+
+        <div id="allImages">
+            <img id="moveLeft" src="img/row-1-column-1.jpg" alt="row-1-column-1">
+            <img src="img/row-1-column-2.jpg" alt="row-1-column-2">
+            <img src="img/row-1-column-3.jpg" alt="row-1-column-3">
+            <img src="img/row-2-column-1.jpg" alt="row-2-column-1">
+            <img id="moveRight" src="img/row-2-column-2.jpg" alt="row-2-column-2">
+            <img src="img/row-2-column-3.jpg" alt="row-2-column-3">
+            <img id="moveLeftDown" src="img/row-3-column-1.jpg" alt="row-3-column-1">
+            <img src="img/row-3-column-2.jpg" alt="row-3-column-2">
+            <img id="moveUp" src="img/row-3-column-3.jpg" alt="row-3-column-3">
+        </div>
+
+
+</body>
+</html>
