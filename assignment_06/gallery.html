@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jie Chen | Gallery</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+
+        #header {
+            height: 400px;
+            line-height: 400px;
+
+            background-image: url("img/galleryBackground.jpg");
+        }
+
+        #box1 {
+            margin-top: 20px;
+			display: flex;
+            flex-wrap: wrap;
+            width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ececec;
+		}
+
+        #box2 {
+			display: flex;
+            flex-wrap: wrap;
+            width: 550px;
+            margin: 0px;
+		}
+
+        .img-container {
+            width: 231px;
+            height: 180px;
+            border: 2px black solid;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .long-img-container {
+            width: 506px;
+            height: 180px;
+            border: 2px black solid;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .large-img-container {
+            width: 506px;
+            height: 400px;
+            border: 2px black solid;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+
+			background-color: rgba(0,0,0,0.6);
+
+			color: #FFF;
+			text-align: center;
+			padding-top: 80px;
+			/* display: flex;
+			align-items: center;
+			justify-content: center; */
+			visibility: hidden;
+		}
+
+        .large-img-container > .overlay {
+			padding-top: 190px;
+        }
+
+        .img-container:hover > .overlay,  .long-img-container:hover > .overlay, .large-img-container:hover > .overlay{
+			visibility: visible;
+		}
+
+        .img-container > img {
+			height: 100%;
+			width: auto;
+		}
+
+        .img-container > .width-100 {
+			width: 100%;
+			height: auto;
+		}
+
+        .long-img-container > img{
+            width: 100%;
+			height: auto;
+            
+        }
+
+        .large-img-container > img{
+            width: 100%;
+			height: auto;
+            position: relative;
+            bottom: 65px;
+        }
+
+        #diZi {
+            position: relative;
+            bottom: 60px;
+        }
+
+        #banHu {
+            position: relative;
+            right: 20px;
+        }
+
+        #erHu {
+            position: relative;
+            bottom: 40px;
+        }
+
+        #liuQin {
+            position: relative;
+            bottom: 60px;
+        }
+
+        #panFlute {
+            position: relative;
+            right: 30px;
+        }
+
+        #ruan {
+            position: relative;
+            bottom: 20px;
+        }
+
+        #Sheng {
+            position: relative;
+            right: 20px;
+        }
+
+        #suoNa {
+            position: relative;
+            bottom: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Gallery</h1>
+    </div>
+
+    <div id="navbar">
+        <ul id="top-menu">
+            <li>
+                <a href="interest.html">Home</a>
+                <ul id="sub-menu">
+                    <li><a href="interest.html#main">Introduction</a></li>
+                    <li><a href="interest.html#Tuning">Tuning</a></li>
+                    <li><a href="interest.html#ZitherFingerpick">Zither Fingerpick</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul> 
+	</div>
+        
+    <div id="box1">
+        
+        <div class="long-img-container">
+            <img class="width-100" src="img/instruments/guZheng.jpg" alt="Gu Zheng">
+            <div class="overlay">Gu Zheng</div>
+        </div>
+        <div class="img-container">
+            <img id="banHu" src="img/instruments/banHu.jpg" alt="Ban Hu">
+            <div class="overlay">Ban Hu</div>
+        </div>
+        <div class="img-container">
+            <img class="width-100" id="erHu" src="img/instruments/Erhu.jpg" alt="Er Hu">
+            <div class="overlay">Er Hu</div>
+        </div>
+        <div id="box2">
+            <div class="img-container">
+                <img class="width-100" id="liuQin" src="img/instruments/liuQin.jpg" alt="Liu Qin">
+                <div class="overlay">Liu Qin</div>
+            </div>
+            <div class="img-container">
+                <img src="img/instruments/panFlute.webp" id="panFlute" alt="panFlute">
+                <div class="overlay">panFlute</div>
+            </div>
+            <div class="img-container">
+                <img src="img/instruments/piPa.webp" alt="Pi Pa">
+                <div class="overlay">Pi Pa</div>
+            </div>
+            <div class="img-container">
+                <img class="width-100" id="ruan" src="img/instruments/ruan.jpg" alt="Ruan">
+                <div class="overlay">Ruan</div>
+            </div>
+        </div>
+        <div class="large-img-container">
+            <img src="img/instruments/yueQin.jpg" alt="Yue Qin">
+            <div class="overlay">Yue Qin</div>
+        </div>
+        <div class="img-container">
+            <img id="Sheng" src="img/instruments/sheng.jpg" alt="Sheng">
+            <div class="overlay">Sheng</div>
+        </div>
+        <div class="img-container">
+            <img class="width-100" id="suoNa" src="img/instruments/suoNa.jpg" alt="Suo Na">
+            <div class="overlay">Suo Na</div>
+        </div>
+        <div class="long-img-container">
+            <img class="width-100" id="diZi" src="img/instruments/Dizi.jpg" alt="Di Zi">
+            <div class="overlay">Di Zi</div>
+        </div>
+    </div>
+    <div id="footer">
+		University of Southern California &copy; 2023
+	</div>
+</body>
+</html>
