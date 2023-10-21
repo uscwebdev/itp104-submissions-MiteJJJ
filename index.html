@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>Jie Chen | Student Page</title>
+
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+
     <style>
         img {
             width: auto;
@@ -61,6 +64,37 @@
 			width: 430px;
 		}
 
+        @media (max-width: 767px) {
+            body{
+                margin: 0px;
+            }
+
+			#everything {
+                width: auto;
+				flex-direction: column;
+            }
+
+            #box1, #box2 {
+                width: auto;
+				flex-direction: column;
+            }
+
+            #favorite, #schedule, #Assignments, #Labs {
+                width: auto;
+            }
+            
+            #snowmanimg {
+                width: auto;
+                height: auto;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+
+            }
+		}
+
     </style>
 </head>
 <body>
@@ -76,7 +110,9 @@
                 <p>My favorite color: <strong><em>LightSkyBlue</em></strong>.</p>
                 <p>My favorite website: <a target="_blank" href="https://quixel.com">https://quixel.com</a></p>
                 <p>My favorite activity:</p>
-                <img src="img/snowman.jpg" alt="snow man">
+                <div id="snowmanimg">
+                    <img src="img/snowman.jpg" alt="snow man">
+                </div>
             </div>
             <!-- #favorite -->
 
