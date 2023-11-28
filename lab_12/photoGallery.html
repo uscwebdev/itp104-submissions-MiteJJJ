@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhotoGallery</title>
+
+    <style>
+        #header {
+            background-image: url('img/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #FFF;
+            font-size: 2em;
+            text-align: center;
+            text-shadow: 0px 0px 10px #000;
+            height: 400px;
+            line-height: 400px;
+        }
+
+        #footer {
+            background-color: #777;
+            color: #FFF;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 0.8em;
+        }
+
+        #main {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            padding-bottom: 50px;
+        }
+
+        #box1 {
+			display: flex;
+            flex-wrap: wrap;
+            width: 1260px;
+            margin-left: auto;
+            margin-right: auto;
+		}
+
+        #box2 {
+			display: flex;
+
+            flex-wrap: wrap;
+            width: 1260px;
+            margin-left: auto;
+            margin-right: auto;
+		}
+
+        #box3 {
+			display: flex;
+            flex-wrap: wrap;
+            width: 420px;
+		}
+
+        #box4 {
+			display: flex;
+            flex-wrap: wrap;
+            width: 840px;
+		}
+
+        .thumbnail {
+            width: 400px;
+            height: 300px;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .large {
+            width: 820px;
+            height: 695px;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .img-container > p {
+			text-align: center;
+			/* display: none; */
+			visibility: hidden;
+		}
+
+        .thumbnail:hover + p, .large:hover + p {
+			/* display: block; */
+			visibility: visible;
+		}
+    </style>
+</head>
+<body>
+
+	<div id="header">
+		<h1>Gallery</h1>
+	</div> <!-- #header -->
+
+
+    <div id="box1">
+        <div id="dog" class="img-container">
+            <img class="thumbnail" src="img/dog.jpg" alt="dog">
+            <p>dog</p>
+        </div>
+        <div id="elephant" class="img-container">
+            <img class="thumbnail" src="img/elephant.jpg" alt="elephant">
+            <p>elephant</p>
+        </div>
+        <div id="giraffe" class="img-container">
+            <img class="thumbnail" src="img/giraffe.webp" alt="giraffe">
+            <p>giraffe</p>
+        </div>
+    </div>
+
+    <div id="box2">
+        <div id="box3">
+            <div id="lion" class="img-container">
+                <img class="thumbnail" src="img/lion.jpg" alt="lion">
+                <p>lion</p>
+            </div>
+            <div id="panda" class="img-container">
+                <img class="thumbnail" src="img/panda.jpg" alt="panda">
+                <p>panda</p>
+            </div>
+        </div>
+        <div id="box4">
+            <div id="peguin" class="img-container">
+                <img class="large" src="img/peguin.jpg" alt="peguin">
+                <p>peguin</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="box1">
+        <div id="sheep" class="img-container">
+            <img class="thumbnail" src="img/sheep.jpg" alt="sheep">
+            <p>sheep</p>
+        </div>
+        <div id="squirrel" class="img-container">
+            <img class="thumbnail" src="img/squirrel.jpg" alt="squirrel">
+            <p>squirrel</p>
+        </div>
+        <div id="sea_turtle" class="img-container">
+            <img class="thumbnail" src="img/sea_turtle.jpg" alt="sea_turtle">
+            <p>sea_turtle</p>
+        </div>
+    </div>
+
+	<div id="footer">
+		University of Southern California &copy; 2018
+	</div> <!-- #footer -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $('#dog > img').click(function(){
+            $('img').css('outline', '0px solid #555');
+            $('#dog > img').css('outline', '1px solid #555');
+        });
+
+        $('#elephant > img').click(function(){
+            $('img').css('outline', '0px solid #555');
+            $('#elephant > img').css('outline', '1px solid #555');
+        });
+
+        $('#giraffe > img').click(function(){
+            $('img').css('outline', '0px solid #555');
+            $('#giraffe > img').css('outline', '1px solid #555');
+        });
+
+        $('#lion > img').click(function(){
+            $('img').css('outline', '0px solid #555');
+            $('#lion > img').css('outline', '1px solid #555');
+        });
+
+        $('#panda > img').click(function(){
+            $('img').css('outline', '0px solid #555');
+            $('#panda > img').css('outline', '1px solid #555');
+        });
+
+        $('#peguin > img').click(function(){
+            $('img').css('outline', '0px solid #555');
+            $('#peguin > img').css('outline', '1px solid #555');
+        });
+
+        $('#sheep > img').click(function(){
+            $('img').css('outline', '0px solid #555');
+            $('#sheep > img').css('outline', '1px solid #555');
+        });
+
+        $('#squirrel > img').click(function(){
+            $('img').css('outline', '0px solid #555');
+            $('#squirrel > img').css('outline', '1px solid #555');
+        });
+
+        $('#sea_turtle > img').click(function(){
+            $('img').css('outline', '0px solid #555');
+            $('sea_turtle > img').css('outline', '1px solid #555');
+        });
+    </script>
+
+
+</body>
+</html>
